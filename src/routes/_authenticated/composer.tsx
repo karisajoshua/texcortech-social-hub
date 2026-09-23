@@ -313,7 +313,7 @@ function Composer() {
               />
             </div>
           ) : (
-            <Tabs defaultValue={selected[0]} className="p-5">
+            <Tabs defaultValue={selected[0] ?? ""} className="p-5">
               <TabsList className="flex-wrap">
                 {selected.map((platform) => (
                   <TabsTrigger key={platform} value={platform} className="gap-2">
