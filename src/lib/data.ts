@@ -175,7 +175,7 @@ export async function logActivity(input: {
     post_id: input.postId ?? null,
     channel_id: input.channelId ?? null,
     result: input.result ?? "success",
-    detail: input.detail ?? {},
+    detail: (input.detail ?? {}) as never,
   });
 }
 
