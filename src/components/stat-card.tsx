@@ -12,10 +12,10 @@ export function StatCard({
 }: {
   label: string;
   value: ReactNode;
-  hint?: string;
-  icon?: ReactNode;
-  loading?: boolean;
-  className?: string;
+  hint?: string | undefined;
+  icon?: ReactNode | undefined;
+  loading?: boolean | undefined;
+  className?: string | undefined;
 }) {
   return (
     <div className={cn("panel p-5", className)}>

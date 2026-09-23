@@ -8,11 +8,11 @@ export function EmptyState({
   action,
   className,
 }: {
-  icon?: ReactNode;
+  icon?: ReactNode | undefined;
   title: string;
-  description?: string;
-  action?: ReactNode;
-  className?: string;
+  description?: string | undefined;
+  action?: ReactNode | undefined;
+  className?: string | undefined;
 }) {
   return (
     <div
@@ -38,9 +38,9 @@ export function ErrorState({
   description,
   action,
 }: {
-  title?: string;
-  description?: string;
-  action?: ReactNode;
+  title?: string | undefined;
+  description?: string | undefined;
+  action?: ReactNode | undefined;
 }) {
   return (
     <div className="rounded-xl border border-destructive/30 bg-destructive/8 px-6 py-8 text-center">
