@@ -29,7 +29,7 @@ export const Route = createFileRoute("/_authenticated/composer")({
       { property: "og:description", content: "Platform-specific campaign composer for Texcortech Systems." },
     ],
   }),
-  component: Composer;
+  component: Composer,
 });
 
 type VariantDraft = {
